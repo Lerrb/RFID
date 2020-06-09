@@ -1,7 +1,7 @@
 package modle;
 
 public class parcel {
-    int cardID;
+    Integer cardID;
     String 物品类型;
     String 现在地址;
     String 发货人;
@@ -12,6 +12,18 @@ public class parcel {
     String 收货人联系方式;
     String 下一站;
 
+    public parcel(Integer cardID, String 物品类型, String 现在地址, String 发货人, String 收货人, String 发货地址, String 收货地址, String 发货人联系方式, String 收货人联系方式, String 下一站) {
+        this.cardID = cardID;
+        this.物品类型 = 物品类型;
+        this.现在地址 = 现在地址;
+        this.发货人 = 发货人;
+        this.收货人 = 收货人;
+        this.发货地址 = 发货地址;
+        this.收货地址 = 收货地址;
+        this.发货人联系方式 = 发货人联系方式;
+        this.收货人联系方式 = 收货人联系方式;
+        this.下一站 = 下一站;
+    }
 
 
     public int getCardID() {
