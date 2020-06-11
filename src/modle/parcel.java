@@ -1,7 +1,7 @@
 package modle;
 
 public class parcel {
-    Integer cardID;
+    String cardID;
     String 物品类型;
     String 现在地址;
     String 发货人;
@@ -12,7 +12,7 @@ public class parcel {
     String 收货人联系方式;
     String 下一站;
 
-    public parcel(Integer cardID, String 物品类型, String 现在地址, String 发货人, String 收货人, String 发货地址, String 收货地址, String 发货人联系方式, String 收货人联系方式, String 下一站) {
+    public parcel(String cardID, String 物品类型, String 现在地址, String 发货人, String 收货人, String 发货地址, String 收货地址, String 发货人联系方式, String 收货人联系方式, String 下一站) {
         this.cardID = cardID;
         this.物品类型 = 物品类型;
         this.现在地址 = 现在地址;
@@ -26,11 +26,11 @@ public class parcel {
     }
 
 
-    public int getCardID() {
+    public String getCardID() {
         return cardID;
     }
 
-    public void setCardID(int cardID) {
+    public void setCardID(String cardID) {
         this.cardID = cardID;
     }
 
