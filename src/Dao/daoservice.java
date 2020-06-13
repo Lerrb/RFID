@@ -1,6 +1,6 @@
 package Dao;
 
-import modle.parcel;
+import model.parcel;
 
 import java.sql.SQLException;
 

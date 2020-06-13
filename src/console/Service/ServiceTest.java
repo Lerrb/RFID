@@ -1,6 +1,6 @@
 package console.Service;
 
-import modle.StudentTest;
+import model.StudentTest;
 
 import java.io.*;
 import java.net.Socket;
@@ -33,8 +33,8 @@ public class ServiceTest implements Runnable {//创建多线程
             obj.writeDouble (1213.1212);
             //发送一个学生对象
             //writeObject不太行，建议使用Map集合
-            //StudentTest ss = new StudentTest(2232, "胡歌");
-            //obj.writeObject (ss);
+            StudentTest ss = new StudentTest(2232, "胡歌");
+            obj.writeObject (ss);
             pw.flush ();
             obj.flush ();
         } catch (IOException e) {
