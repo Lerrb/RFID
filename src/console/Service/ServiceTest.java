@@ -32,7 +32,6 @@ public class ServiceTest implements Runnable {//创建多线程
             //发送一个浮点数
             obj.writeDouble (1213.1212);
             //发送一个学生对象
-            //writeObject不太行，建议使用Map集合
             StudentTest ss = new StudentTest(2232, "胡歌");
             obj.writeObject (ss);
             pw.flush ();
